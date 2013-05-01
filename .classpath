@@ -10,5 +10,6 @@
 	<classpathentry kind="var" path="M2_REPO/org/apache/pluto/pluto-taglib/1.1.7/pluto-taglib-1.1.7.jar"/>
 	<classpathentry kind="var" path="M2_REPO/org/apache/pluto/pluto-container/1.1.7/pluto-container-1.1.7.jar"/>
 	<classpathentry kind="var" path="M2_REPO/xerces/xmlParserAPIs/2.6.2/xmlParserAPIs-2.6.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/hibernate-core-3.6.4.Final.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

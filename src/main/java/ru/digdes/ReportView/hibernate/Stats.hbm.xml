@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="ru.digdes.ReportView.model.entities.Stats" table="stats">
+  <id name="stats_id" column="stats_id">
+      <generator class="increment"/>
+  </id>
+  
+	<property column="view_date" name="view_date" type="java.util.Date"/>
+	<property column="view_number" name="view_number" type="java.lang.Long"/>
+	<many-to-many column="report_id" class="ru.digdes.ReportView.model.entities.Report"/>
+	<many-to-many column="user_id" class="ru.digdes.ReportView.model.entities.User"/>
+  </class>
+</hibernate-mapping>
