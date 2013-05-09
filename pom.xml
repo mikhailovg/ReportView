@@ -7,6 +7,9 @@
   <version>1.0-SNAPSHOT</version>
   <name>Maven Portlet Archetype</name>
   <url>http://maven.apache.org</url>
+  <properties>
+		<spring.version>3.1.1.RELEASE</spring.version>
+	</properties>
   <profiles>
       <profile>
           <id>jetspeed</id>
@@ -25,6 +28,12 @@
       </profile>
   </profiles>
   <dependencies>
+ 		<dependency>
+			<groupId>javax.portlet</groupId>
+			<artifactId>portlet-api</artifactId>
+			<version>1.0</version>
+			<scope>provided</scope>
+		</dependency>
       <dependency>
           <groupId>portlet-api</groupId>
           <artifactId>portlet-api</artifactId>
@@ -51,5 +60,72 @@
 			<artifactId>pluto-container</artifactId>
 			<version>1.1.7</version>
 		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.4</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+		   <groupId>org.springframework</groupId>
+		   <artifactId>spring-expression</artifactId>
+		   <version>${spring.version}</version>
+		</dependency> 
+		<dependency>
+		   <groupId>org.springframework</groupId>
+		   <artifactId>spring-asm</artifactId>
+		   <version>${spring.version}</version>
+		</dependency> 
+		<dependency>
+		   <groupId>org.springframework</groupId>
+		   <artifactId>spring-aop</artifactId>
+		   <version>${spring.version}</version>
+		</dependency> 
+		<dependency>
+		   <groupId>org.springframework</groupId>
+		   <artifactId>spring-beans</artifactId>
+		   <version>${spring.version}</version>
+		</dependency> 
+		<dependency>
+		   <groupId>org.springframework</groupId>
+		   <artifactId>spring-core</artifactId>
+		   <version>${spring.version}</version>
+		</dependency> 
+		<dependency>
+		   <groupId>org.springframework</groupId>
+		   <artifactId>spring-tx</artifactId>
+		   <version>${spring.version}</version>
+		</dependency> 
+		
+		<dependency>
+        <groupId>postgresql</groupId>
+        <artifactId>postgresql</artifactId>
+        <version>9.2-1002.jdbc4</version>
+    </dependency>
   </dependencies>
 </project>

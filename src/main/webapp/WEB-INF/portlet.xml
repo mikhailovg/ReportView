@@ -26,5 +26,7 @@
             <short-title>Report View</short-title>
             <keywords>Report View</keywords>
         </portlet-info>
+        
     </portlet>
+    
 </portlet-app>

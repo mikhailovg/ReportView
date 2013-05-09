@@ -1,12 +1,5 @@
 package ru.digdes.ReportView.model.entities;
 
-/**
- * Created with IntelliJ IDEA.
- * User: userg
- * Date: 30.04.13
- * Time: 10:51
- * To change this template use File | Settings | File Templates.
- */
 public class Role {
     private Long role_id;
     private String name;

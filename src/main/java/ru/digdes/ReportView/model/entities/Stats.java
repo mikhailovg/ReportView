@@ -2,13 +2,6 @@ package ru.digdes.ReportView.model.entities;
 
 import java.util.Date;
 
-/**
- * Created with IntelliJ IDEA.
- * User: userg
- * Date: 30.04.13
- * Time: 10:58
- * To change this template use File | Settings | File Templates.
- */
 public class Stats {
 
 	private Long stats_id;
